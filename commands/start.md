@@ -1,6 +1,5 @@
 ---
-name: start
-description: "Bootstrap a new project with Hermit, Justfile, agents, and CLAUDE.md. Use when the user runs /start or asks to set up a new project."
+description: "Bootstrap a new project with Hermit, Justfile, agents, and CLAUDE.md"
 ---
 
 # /start — Project Bootstrap

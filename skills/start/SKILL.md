@@ -1,3 +1,8 @@
+---
+name: start
+description: "Bootstrap a new project with Hermit, Justfile, agents, and CLAUDE.md. Use when the user runs /start or asks to set up a new project."
+---
+
 # /start — Project Bootstrap
 
 Sets up a new repository with the full Claude dev environment. Run this in any new project directory.

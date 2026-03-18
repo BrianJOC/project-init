@@ -5,7 +5,7 @@ Claude Code plugin for bootstrapping new projects with Hermit, Justfile, agents,
 ## One-time machine setup
 
 ```bash
-claude plugin marketplace add github:BrianJOC/project-init
+claude plugin marketplace add BrianJOC/project-init
 claude plugin install project-init@brianjoc
 ```
 

@@ -1,0 +1,18 @@
+{
+  "name": "project-init",
+  "version": "1.0.0",
+  "description": "Bootstrap new projects with Hermit, Justfile, agents, and CLAUDE.md via /start",
+  "author": {
+    "name": "BrianJOC"
+  },
+  "homepage": "https://github.com/BrianJOC/project-init",
+  "repository": "https://github.com/BrianJOC/project-init",
+  "license": "MIT",
+  "keywords": [
+    "bootstrap",
+    "scaffold",
+    "agents",
+    "hermit",
+    "justfile"
+  ]
+}

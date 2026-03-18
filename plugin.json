@@ -1,8 +1,0 @@
-{
-  "name": "bootstrap",
-  "version": "1.0.0",
-  "skills": [
-    { "name": "start", "path": "skills/start.md" }
-  ],
-  "mcpServers": {}
-}

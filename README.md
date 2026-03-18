@@ -1,11 +1,12 @@
-# bootstrap
+# project-init
 
-Claude Code plugin for bootstrapping new repositories with a full dev environment.
+Claude Code plugin for bootstrapping new projects with Hermit, Justfile, agents, and CLAUDE.md.
 
 ## One-time machine setup
 
 ```bash
-claude plugin install github:BrianJOC/project-init
+claude plugin marketplace add github:BrianJOC/project-init
+claude plugin install project-init@brianjoc
 ```
 
 ## Starting a new project (Claude present)
@@ -29,8 +30,9 @@ Then run `/start` later to complete configuration.
 - **`init.sh`**: Hermit tooling + baseline Justfile (no Claude required)
 - **`/start`**: Agent selection + adaptation, CLAUDE.md, `.claude/settings.local.json`
 
-## After setup
+## Updating
 
-1. Create a GitHub repository
-2. `git remote add origin <url> && git push -u origin main`
-3. `claude plugin install github:BrianJOC/project-init` on each machine
+```bash
+claude plugin marketplace update brianjoc
+claude plugin update project-init
+```

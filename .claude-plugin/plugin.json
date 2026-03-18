@@ -1,6 +1,6 @@
 {
   "name": "project-init",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bootstrap new projects with Hermit, Justfile, agents, and CLAUDE.md via /start",
   "author": {
     "name": "BrianJOC"

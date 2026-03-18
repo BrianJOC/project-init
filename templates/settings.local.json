@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Bash(git:*)",
+      "Bash(just:*)",
+      "Bash(curl:*)",
+      "Bash(bash:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(cp:*)",
+      "Bash(mkdir:*)",
+      "Bash(chmod:*)",
+      "Bash(stat:*)",
+      "Bash(source:*)",
+      "Bash(export:*)",
+      "Bash(cd:*)",
+      "Bash(python3:*)",
+      "Bash(uv:*)",
+      "Bash(pnpm:*)",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(jq:*)",
+      "Bash(gh api:*)",
+      "WebSearch",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.github.com)"
+    ]
+  }
+}

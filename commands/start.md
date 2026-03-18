@@ -27,7 +27,7 @@ If not a git repo: run `git init` before proceeding. Phase 4 depends on git.
 Check for `bin/hermit.hcl` and `Justfile`. If either is missing:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOU/bootstrap/main/init.sh)
+bash <(curl -s https://raw.githubusercontent.com/BrianJOC/project-init/main/init.sh)
 ```
 
 If both exist: print "Infrastructure already in place." and continue.

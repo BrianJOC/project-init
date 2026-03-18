@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # bootstrap/init.sh — deterministic project infrastructure setup
 # Idempotent: safe to run multiple times. No Claude required.
-# Usage: bash <(curl -s https://raw.githubusercontent.com/YOU/bootstrap/main/init.sh)
+# Usage: bash <(curl -s https://raw.githubusercontent.com/BrianJOC/project-init/main/init.sh)
 
 set -euo pipefail
 

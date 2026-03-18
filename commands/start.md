@@ -2,7 +2,7 @@
 description: "Bootstrap a new project with Hermit, Justfile, agents, and CLAUDE.md"
 ---
 
-# /start — Project Bootstrap
+# /project-init:start — Project Bootstrap
 
 Sets up a new repository with the full Claude dev environment. Run this in any new project directory.
 
@@ -199,19 +199,19 @@ See `.claude/settings.local.json` for allowed commands. Run `just` to see availa
 
 ```bash
 git add .claude/ CLAUDE.md
-git commit -m "chore: bootstrap project with /start"
+git commit -m "chore: bootstrap project with /project-init:start"
 ```
 
 ---
 
 ## Re-run detection
 
-If `.claude/agents/` or `CLAUDE.md` already exists when `/start` is invoked, do not run the full flow. Ask:
+If `.claude/agents/` or `CLAUDE.md` already exists when `/project-init:start` is invoked, do not run the full flow. Ask:
 
 _"This project is already bootstrapped. What would you like to do?"_
 
 Options:
-1. **Add a new agent** — Phase 3 for one agent only. Commit: `chore: add <name> agent via /start`
-2. **Re-adapt an existing agent** — Pick an agent, re-run adaptation, overwrite. Commit: `chore: re-adapt <name> agent via /start`
-3. **Regenerate CLAUDE.md** — Re-run Q1 only, regenerate CLAUDE.md. Commit: `chore: regenerate CLAUDE.md via /start`
+1. **Add a new agent** — Phase 3 for one agent only. Commit: `chore: add <name> agent via /project-init:start`
+2. **Re-adapt an existing agent** — Pick an agent, re-run adaptation, overwrite. Commit: `chore: re-adapt <name> agent via /project-init:start`
+3. **Regenerate CLAUDE.md** — Re-run Q1 only, regenerate CLAUDE.md. Commit: `chore: regenerate CLAUDE.md via /project-init:start`
 4. **Full re-bootstrap** — Full Phase 2→3→4. Show diffs of existing files; user approves each overwrite. Commit: `chore: re-bootstrap project with /start`

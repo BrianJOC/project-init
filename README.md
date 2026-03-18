@@ -14,7 +14,7 @@ claude plugin install project-init@brianjoc
 Open Claude Code in any new project directory and run:
 
 ```
-/start
+/project-init:start
 ```
 
 ## Starting a new project (no Claude)
@@ -23,12 +23,12 @@ Open Claude Code in any new project directory and run:
 bash <(curl -s https://raw.githubusercontent.com/BrianJOC/project-init/main/init.sh)
 ```
 
-Then run `/start` later to complete configuration.
+Then run `/project-init:start` later to complete configuration.
 
 ## What gets set up
 
 - **`init.sh`**: Hermit tooling + baseline Justfile (no Claude required)
-- **`/start`**: Agent selection + adaptation, CLAUDE.md, `.claude/settings.local.json`
+- **`/project-init:start`**: Agent selection + adaptation, CLAUDE.md, `.claude/settings.local.json`
 
 ## Updating
 

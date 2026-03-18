@@ -5,7 +5,7 @@ Claude Code plugin for bootstrapping new repositories with a full dev environmen
 ## One-time machine setup
 
 ```bash
-claude plugin install github:YOU/bootstrap
+claude plugin install github:BrianJOC/project-init
 ```
 
 ## Starting a new project (Claude present)
@@ -19,7 +19,7 @@ Open Claude Code in any new project directory and run:
 ## Starting a new project (no Claude)
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOU/bootstrap/main/init.sh)
+bash <(curl -s https://raw.githubusercontent.com/BrianJOC/project-init/main/init.sh)
 ```
 
 Then run `/start` later to complete configuration.
@@ -33,4 +33,4 @@ Then run `/start` later to complete configuration.
 
 1. Create a GitHub repository
 2. `git remote add origin <url> && git push -u origin main`
-3. `claude plugin install github:YOU/bootstrap` on each machine
+3. `claude plugin install github:BrianJOC/project-init` on each machine

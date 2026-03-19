@@ -115,9 +115,11 @@ For **each agent in the pool**, one at a time:
    - Ask about project-specific behavioral changes
    - Show proposed adapted content before writing to disk
    - Loop until the user approves
-4. If user wants an agent not in the pool: fetch from upstream:
-   - URL: `https://raw.githubusercontent.com/msitarzewski/agency-agents/main/agents/<name>.md`
-   - If fetch fails (network/404): inform user, offer to skip or retry
+4. If user wants an agent not in the pool: fetch from upstream using the GitHub search API:
+   - Search: `https://api.github.com/search/code?q=repo:msitarzewski/agency-agents+filename:<name>`
+   - The repo organizes agents by category subdirectory (e.g. `engineering/`, `design/`, `testing/`, `product/`, `project-management/`, `strategy/`). Files are named `<category>-<slug>.md`.
+   - From the search results, pick the best match and fetch the raw URL: `https://raw.githubusercontent.com/msitarzewski/agency-agents/main/<category>/<filename>`
+   - If search returns no results: inform user, offer to skip or retry
    - Run full adaptation (also covers: Pencil MCP tool wiring, SuperPowers skill references, pipeline diagram integration)
 
 No agent is copied verbatim. All go through the review.
@@ -140,7 +142,7 @@ For each approved agent, write to `.claude/agents/<name>.md`. The file content i
 
 ```yaml
 ---
-# upstream: msitarzewski/agency-agents @ <sha-or-unknown>
+# upstream: msitarzewski/agency-agents/<category>/<filename> @ <sha-or-unknown>
 # modified: <today's date> — adapted for <PROJECT_DESCRIPTION>
 name: ...
 ```
